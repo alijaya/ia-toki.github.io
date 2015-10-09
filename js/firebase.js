@@ -14,13 +14,13 @@ $(document).ready(function() {
 			}
 			if (exists) {
 				$("#inputEmail").val("");
-				$("#text-success").hide();
-				$("#text-fail").show();
+				$("#text-success").hide("slow");
+				$("#text-fail").show("slow");
 			} else {
 				firebase.push(email);
 				$("#inputEmail").val("");
-				$("#text-fail").hide();
-				$("#text-success").show();
+				$("#text-fail").hide("slow");
+				$("#text-success").show("slow");
 			}
 		});
 	});

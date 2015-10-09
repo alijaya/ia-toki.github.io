@@ -1,65 +1,176 @@
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
 body {
-	font-family: 'Helvetica', sans-serif;
+	font-family: 'Poiret One', cursive;
 	font-size: 2em;
 }
-.about {
-	background: red;
-	color: white;
-	padding: 3em 0;
-}
-.about h1 {
-	font-size: 3em;
-}
-.about p {
-	margin-top: 3em;
-}
-.subscribe {
-	padding: 3em 0;
-}
-.subscribe .email-wrap {
-	padding: 0;
-}
-.subscribe .button-wrap {
-	padding: 0;
-}
-.subscribe input {
-	border-radius: 0;
-	height: 4em;
-}
-.subscribe button {
+
+.color-primary-0 { color: #AA3939 }	/* Main Primary color */
+.color-primary-1 { color: #FFAAAA }
+.color-primary-2 { color: #D46A6A }
+.color-primary-3 { color: #801515 }
+.color-primary-4 { color: #550000 }
+
+#pages {
 	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#pages > div {
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+
+#pages .first {
+	background-color: #AA3939;
+	color: #FFAAAA;
+}
+
+#pages .second {
+	background-color: #FFAAAA;
+	color: #550000;
+}
+
+#pages .center-page {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h1.title{
+	font-size: 5em;
+	text-transform: uppercase;
+}
+
+h1.highlight {
+	font-family: 'Bree Serif', serif;
+}
+
+blockquote.title {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2em;
+}
+
+blockquote.title p {
+	margin: 2em;
+}
+
+blockquote.title::before, blockquote.title::after {
+	font-size: 5em;
+	font-weight: bold;
+	position: relative;
+	top: 0.25em;
+}
+
+blockquote.title::before {
+	content: "\201C";
+}
+
+blockquote.title::after {
+	content: "\201D";
+}
+
+#emailForm {
+	font-family: inherit;
+	font-size: 2em;
+}
+
+#emailForm button, #emailForm input {
+	font-size: inherit;
+	height: auto;
+}
+
+#emailForm label {
+	vertical-align: middle;
+	margin: 0;
+	font-weight: normal;
+}
+
+#emailForm button {
+	background-color: transparent;
+	border-color: #FFAAAA;
+	font-weight: bold;
+	color: inherit;
+}
+
+#emailForm button:hover {
+	background-color: #FFAAAA;
+	color: #AA3939;
+}
+
+#inputEmail {
 	border-radius: 0;
-	height: 4em;
+	box-shadow: initial;
+	border: 0;
+	background-color: transparent;
+	color: inherit;
+
+	width: 15em;
+	border-bottom: 5px dashed #FFAAAA;
+	padding: 5px;
+	padding-bottom: 0;
+}
+
+#inputEmail::-webkit-input-placeholder {
+	color: #D46A6A;
+}
+#inputEmail:-moz-placeholder {
+	color: #D46A6A;
+}
+#inputEmail::-moz-placeholder {
+	color: #D46A6A;
+}
+#inputEmail:-ms-input-placeholder {
+	color: #D46A6A;
+}
+
+label#text-success, label#text-fail {
+	display: block;
 	font-weight: bold;
 }
-.organizer {
-	margin-top: 2em;
+
+#text-success {
+	color: #D46A6A;
 }
-.organizer .organizer-unit {
-	margin-top: 2em;
+
+#text-fail {
+	color: #550000;
 }
-.organizer .logo-wrapper {
-	height: 100px;
-	width: 150px;
-	margin: 0 auto;
-	white-space: nowrap;
+
+.vertical {
+	flex-direction: column;
 }
-.organizer .helper {
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
+
+#organizerPage {
+	position: relative;
 }
-.organizer img {
-	margin: 0 auto;
-	max-height: 100px;
-	max-width: 150px;
-	vertical-align: middle;
-	display: inline-block;;
+
+#organizerPage div {
+	min-width: 100%;
+	margin-top: 50px;
 }
-.footer {
-	background: red;
-	color: white;
-	margin-top: 1em;
-	padding: 0.4em 0;
-	font-size: 0.7em;
+
+#organizerPage div img {
+	width: 250px;
+	margin: 50px;
+}
+
+footer {
+	position: absolute;
+	bottom: 50px;
+	width: 100%;
+	text-align: center;
 }

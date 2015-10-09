@@ -18,10 +18,43 @@
 		<script src="js/jquery.snapscroll.min.js"></script>
 		<link href="css/style.css" rel='stylesheet' type='text/css' />
 		<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic|Open+Sans:300italic,600italic,400,300,600,700' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
 		<script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
 	</head>
 	<body>
-		<header id="about" class="about header">
+		<div id="pages">
+			<div id="titlePage" class="center-page first">
+				<h1 class="title highlight">Ngoding Seru</h1>
+			</div>
+			<div id="descriptionPage" class="center-page second">
+				<blockquote class="title">
+					<p class="text-center">Dalam rangka memperingati hari pahlawan, Code4Nation dan IA TOKI berinisiatif mengadakan ngoding seru.</br> Ngoding seru dilaksanakan untuk meramaikan hackathon merdeka dan bersama-sama mengajak masyarakat indonesia untuk ngoding dan merasakan bahwa ngoding itu seru.</p>
+				</blockquote>
+			</div>
+			<div id="emailPage" class="center-page first">
+				<form id="emailForm" class="form-inline clearfix">
+					<label>Untuk informasi lebih lanjut,</label>
+					<button type="submit" class="btn">Daftar</button>
+					<label>kan</label>
+					<input type="email" class="form-control" id="inputEmail" placeholder="Email Anda" name="email">
+					<label id="text-success" class="text-right">Email sudah berhasil didaftarkan</label>
+					<label id="text-fail" class="text-right">Email sudah terdaftar</label>
+				</form>
+			</div>
+			<div id="organizerPage" class="center-page vertical second">
+				<h1 class="text-center highlight">Diselenggarakan oleh</h1>
+				<div class="center-page">
+					<img src="images/IA-TOKI.png" alt="Ikatan Alumni TOKI" />
+					<img src="images/C4N1.png" alt="Code4Nation" />
+					<img src="images/TLX.png" alt="TLX" />
+				</div>
+				<footer class="footer">
+					&copy; Ikatan Alumni TOKI
+				</footer>
+			</div>
+		</div>
+		<!-- <header id="about" class="about header">
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
@@ -100,8 +133,9 @@
 			<div class="container">
 				<p class="text-center">&copy; Ikatan Alumni TOKI</p>
 			</div>
-		</footer>
+		</footer> -->
 		<script src="js/firebase.js"></script>
+		<script src="js/snapscroll.js"></script>
 		<script type="application/ld+json">
 			{
 				"@context": "http://schema.org",
